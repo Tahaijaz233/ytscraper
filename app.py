@@ -56,5 +56,6 @@ def fetch_transcript():
             'debug': {'method': 'failed'}
         }), 500
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+# REMOVE THIS BLOCK — Render uses Gunicorn, not app.run()
+# if __name__ == '__main__':
+#     app.run(host='0.0.0.0', port=5000)
